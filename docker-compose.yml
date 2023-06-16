@@ -1,0 +1,9 @@
+version: "3"
+services:
+  core_api:
+    build: .
+    container_name: "api-prediksi-recipe"
+    ports:
+      - "8000:15400"
+    volumes:
+      - ./main_project/:/main_project
